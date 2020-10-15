@@ -1,0 +1,437 @@
+.head {
+    margin: -10px -10px 0px -10px;
+    height:50px;
+    width:1444px;
+    font-size:45px;
+    font-style:inherit;
+    background-color:khaki;
+    text-align: center;
+    overflow: hidden;
+    font-style: oblique;
+    }
+.des
+    {
+        padding-left: 20px;
+    border-left-width: 7px;
+    border-left-style: solid;
+    border-left-color: grey;
+    border-right-width: 7px;
+    border-right-style: solid;
+    border-right-color: grey;
+    background-color: white;
+    width: 350px;
+    height: 50px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    font-style: oblique;
+}
+
+
+/*Start Navbar*/
+.navbar{
+  font-size: 20px;
+  height: 0px;
+  color: #FFF;
+  position: relative;
+  z-index: 1;
+  background-color:khaki;
+  
+  
+}
+
+.navbar .brand{
+  float: left;
+  width: 40%;
+  text-transform: uppercase;
+  
+}
+
+.navbar .links{
+  width: 60%;
+  float: left;
+  margin-top: 15px;
+  font-weight: bold
+}
+
+.navbar .links li{
+  display: inline-block;
+  padding: 10px 0;
+  margin: 0 10px;    
+  border-bottom: 2px solid transparent
+ }
+
+ 
+.navbar .links li.active,
+.navbar .links li:hover{
+    color: royalblue;
+    border-bottom: 2px solid royalblue;
+}
+/*End Navbar*/
+
+.body{
+  background-image: url('../IMAGES4/background02.jpg');
+    background-size: 1444px 3220px;
+    margin: 0px -10px; 
+    width: 1444px;
+    height: 3070px;
+    font-style: oblique;
+    background-repeat: no-repeat;
+    
+    overflow: hidden; 
+    text-align: center;
+    
+}
+
+.firstRow0,.secondRow02,.thirdRow03{
+  width: 100%;
+  height: 550px;
+  margin: 0px 0px 0px 0px;
+}
+.thirdRow03{
+  text-align: center;
+  
+}
+.parent13{
+  display: inline-block;
+}
+.parent11,.parent16{
+  
+  float: left;
+}
+
+.parent12,.parent17,.parent19{
+  float: right;
+}
+ 
+.parent15,.parent16,.parent18{
+  float: left;
+  
+}
+.parent14{
+  float: right;
+  
+}
+
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box01,.flip-box02,.flip-box05,.flip-box04,.flip-box03,.flip-box06 ,.flip-box07 ,.flip-box08,.flip-box09{
+    background-color: transparent;
+    width: 500px;
+    height: 500px;
+    border: 3px solid black;
+    perspective: 1000px; 
+    margin: 10px;
+    padding: 10px;
+    
+}
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner01,.flip-box-inner02,.flip-box-inner05,.flip-box-inner04,.flip-box-inner03 ,.flip-box-inner06 ,.flip-box-inner07 
+  ,.flip-box-inner08 ,.flip-box-inner09 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box01:hover .flip-box-inner01 ,.flip-box02:hover .flip-box-inner02 ,.flip-box05:hover .flip-box-inner05,.flip-box04:hover .flip-box-inner04,
+  .flip-box03:hover .flip-box-inner03, .flip-box06:hover .flip-box-inner06 ,.flip-box07:hover .flip-box-inner07,
+  .flip-box08:hover .flip-box-inner08 , .flip-box09:hover .flip-box-inner09 {
+    transform: rotateY(180deg);
+  }
+  .flip-box01:hover , .flip-box02:hover, .flip-box04:hover,.flip-box05:hover,.flip-box03:hover,.flip-box06:hover,.flip-box07:hover,
+  .flip-box08:hover,.flip-box09:hover {
+  border: 5px solid black;
+   }
+    /* Position the front and back side */
+  .flip-box-front01, .flip-box-back01 , .flip-box-front02, .flip-box-back02, .flip-box-front05, .flip-box-back05, .flip-box-front04, .flip-box-back04 ,
+   .flip-box-front03, .flip-box-back03 , .flip-box-front06, .flip-box-back06 , .flip-box-front07, .flip-box-back07, 
+   .flip-box-front08, .flip-box-back08 , .flip-box-front09, .flip-box-back09 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    
+  }
+  
+  
+  
+  /* Style the back side */
+  .flip-box-back01 , .flip-box-back02, .flip-box-back05, .flip-box-back04, .flip-box-back03 ,  .flip-box-back06,
+  .flip-box-back07, .flip-box-back08, .flip-box-back09{
+    position: relative; 
+    transform: rotateY(180deg);
+    
+}
+
+.flip-box-back01::before  {    
+      content: "";
+      background-image: url('../IMAGES4/item11.jpg');
+      background-size: 500px 500px;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.5;
+      
+      
+    }
+   .flip-box-back02::before {    
+      content: "";
+      background-image: url('../IMAGES4/item12.jpg');
+      background-size: 500px 500px;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.5;
+      text-align: center;
+    }
+    .flip-box-back05::before {    
+      content: "";
+      background-image: url('../IMAGES4/item15.jpg');
+      background-size: 500px 500px;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.5;
+      
+    }
+    .flip-box-back04::before {    
+      content: "";
+      background-image: url('../IMAGES4/item14.jpg');
+      background-size: 500px 500px;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.5;
+      
+    }
+
+    .flip-box-back03::before {    
+      content: "";
+      background-image: url('../IMAGES4/item13.jpg');
+      background-size: 500px 500px;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.5;
+      
+    }
+    .flip-box-back06::before {    
+      content: "";
+      background-image: url('../IMAGES4/item16.jpg');
+      background-size: 500px 500px;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.5;
+      
+    }
+    .flip-box-back07::before {    
+      content: "";
+      background-image: url('../IMAGES4/item17.jpg');
+      background-size: 500px 500px;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.5;
+      
+    }
+
+    .flip-box-back08::before {    
+      content: "";
+      background-image: url('../IMAGES4/item18.jpg');
+      background-size: 500px 500px;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.5;
+      
+    }
+    .flip-box-back09::before {    
+      content: "";
+      background-image: url('../IMAGES4/item19.jpg');
+      background-size: 500px 500px;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.5;
+      
+    }
+    .Zero01 ,.Zero02,.Zero05 ,.Zero04,.Zero03,.Zero06,.Zero07,.Zero08,.Zero09{
+      font-size: 40px;
+      position: relative;
+      color: black;  
+
+
+    }
+    .Zero1,.Zero12,.Zero15,.Zero14,.Zero13,.Zero16,.Zero17,.Zero18,.Zero19{
+      font-size: 30px;
+      position: relative;
+      color: black;  
+     
+    }
+
+   
+    
+    .modalZero{
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      padding-top: 10px; /* Location of the box */
+      left: 0px;
+      z-index: 3;
+      top: 0px;
+      height: 55%;
+      width: 50%;
+      margin:50px 360px;
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.9); /* Black w/ opacity */}
+     
+      #captionZeroZero{
+      font-size: 20px;
+      margin: auto;
+      display: block;
+      width: 80%;
+      text-align: center;
+      color: #ccc;
+      padding: 10px 0;
+      height: 150px;
+      }
+      .head:hover .modalZero{
+        display: block;
+      }
+      #div{
+        height: auto;
+        width: 100%;
+        margin: 0px -10px;
+        background-color: navajowhite;
+        padding: 10px;
+        font-size: 20px;
+        
+      }
+      
+/*START FOOTER*/
+.footer{
+  
+  background-color: #191E22;
+  color: #6A6E71;
+  padding: 30px 0;
+  text-align: center;
+  
+}
+
+.footer ul{
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0 0;
+}
+.footer ul li{
+  display: inline-block
+}
+/*END FOOTER*/
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+
+
+
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  
+  transform: translateX(26px);
+}
+
+
+.slider.round {
+ 
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+} 
+/* Pagination links */
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border-radius: 50%;
+}
+
+/* Style the active/current link */
+.pagination a.active {
+  background-color: pink;
+  color: white;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination a:hover:not(.active) {background-color: #ddd;}
