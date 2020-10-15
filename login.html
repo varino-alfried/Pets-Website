@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>login</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="css02/normalize.css">
+        <link rel="stylesheet" href="css02/login%20&%20registration.css">
+        <link rel="icon" href="pictures02/icon02.png">
+        
+        
+    </head>
+
+    <body class="backgroundPage">
+
+        <div class="navbar">
+            <div class="containerNavBar">
+                <div class="brand">
+                    <h2 style="font: italic normal 26px /1.2 fantasy; text-align: center; letter-spacing: 4px; ">Pet's Store</h2>
+                </div>
+                <ul class="links">
+                    <li><a href="Pet's%20store.html">Home</a></li>
+                    <li><a href="about%20us%20page.html">About us</a></li>
+                    <li class="active"><a href="login.html">Login</a></li>
+                    <li><a href="regsit.html">Register</a></li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <button onclick="document.getElementById('id01').style.display='block'" class="LoginButton">Login to Pet's Store</button>
+
+        <div class="LoginAndRegistration" id="id01">
+            <form class="modal-content-Login animateLogin">
+
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+
+
+
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                    <span class="psw">Forgot <a href="#" class="noColor">password?</a></span>
+                    <p>dont have one ? <a href="regsit.html" class="noColor">create one</a></p>
+                </div>
+
+
+            </form>
+
+
+        </div>
+        <!--Start Footer-->
+        <div class="footer">
+            <div class="container">
+                <span>Copyright &copy; 2020 FCIH TEAM.</span>
+                <ul>
+                    <li><img src="pictures02/facebook.png" alt="facebook"></li>
+                    <li><img src="pictures02/instagram.png" alt="instagram"></li>
+                    <li><img src="pictures02/twitter.png" alt="twitter"></li>
+                </ul>
+            </div>
+        </div>
+        <!--End Footer-->
+
+        <script src="js02/LoginAndRegistration.JS"></script>
+
+
+
+
+
+    </body>
+
+
+
+
+
+
+</html>
