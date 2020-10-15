@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.containerNavBar {
+    width: 1200px;
+    margin: 0% 0% 0% 15%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+/*End Global*/
+/*Start Navbar*/
+.navbar{
+    font-size: 15px;
+    height: 0px;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.navbar .brand{
+    float: left;
+    width: 30%;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.navbar .links {
+float: left;
+width: 70%;
+margin-top: -5px;    
+margin-bottom: 25px;    
+font-weight: bold
+}
+
+.navbar .links li{
+ display: inline-block;
+ padding: 10px 0;
+ margin: 10px 10px;    
+ border-bottom: 2px solid transparent;
+}
+.links a{
+    color: inherit;
+    text-decoration: none;
+}
+.navbar .links li.active,
+.navbar .links li:hover{
+    color: #83df00;
+    border-bottom: 2px solid #83df00;
+}
+
+/*nav bar---------------------------------------------------------------------------------------------------*/
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #222831;
+}
+
+.commentBox{
+    padding: 1%;
+    width: 96%;
+    border: 1px solid white;
+    background-color: #30475e;
+    margin-bottom: 10px;
+}
+.date,p{
+    color: white
+}
+
+.leftPanelImg{
+    width: 10%;
+    float: left;
+}
+
+.leftPanelImg img{
+    border-radius: 100%;
+    width: 145px;
+    height: 100px;
+}
+
+.rightPanel{
+    width:85%;
+    float: left;
+    margin-left: 1%;
+}
+.clear{
+    clear: both;
+}
+
+.form{
+    padding: 10px;
+    border: 1px solid white;
+    margin-bottom: 10px;
+    text-align: center    
+}
+.form h4{
+    color: white;
+}
+span{
+    color: white;
+}
+.form input[type="text"], .form input[type="date"], .form textarea{
+    border: 2px solid white;
+    padding: 2px;
+    width: 290px;
+    color: white;
+    background-color: #30475e;
+}
+#addComment{
+    background-color: #ececec;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 13px;
+    width: 15%;
+    margin-bottom: 10px;
+    margin-top:10px;
+    outline:none;
+    cursor: pointer;
+}
+#addComment:hover{
+    color: white;
+    background-color: #191E22;
+}
+/*START FOOTER*/
+.footer{
+    background-color: #191E22;
+    color: #6A6E71;
+    padding: 40px 0 40px;
+    text-align: center;
+    
+}
+
+.footer ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 10px 0 0;
+}
+.footer ul li{
+    display: inline-block
+}
+/*END FOOTER*/
+/*Start color switch*/
+.colorSwitch_button
+{
+    background-color: #4B5557;
+    color: #FFF;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 13px;
+    width: 60%;
+    margin-bottom: 10px;
+    margin-top:10px;
+    outline:none;
+    cursor: pointer;
+}
+/*End color switch*/
